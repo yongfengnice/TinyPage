@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="singleTask：回到首页"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_ok_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="normal:显示多个详情页"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_ok_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="singleTop:显示同一个详情页"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_ok_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送全局广播"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_ok_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出App"
+        android:textAllCaps="false"/>
+</LinearLayout>

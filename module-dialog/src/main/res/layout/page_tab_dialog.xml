@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开Dialog"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_ok_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开PopWindow"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_ok_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开drawerLayout"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_ok_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开推送页面"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_drawer"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Item text1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Item text2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Item text1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Item text2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Item text1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Item text2"/>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

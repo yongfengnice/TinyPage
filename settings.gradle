@@ -1,0 +1,7 @@
+include ':app'
+include ':tiny-page'
+include ':module-mvp'
+include ':module-activity'
+include ':module-dialog'
+include ':module-third'
+include ':module-push'

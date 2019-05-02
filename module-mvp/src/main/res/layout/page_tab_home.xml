@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭当前页面并打开页面"/>
+
+    <Button
+        android:id="@+id/btn_ok_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="不关闭当前页面并打开页面"/>
+
+    <Button
+        android:id="@+id/btn_ok_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册广播"/>
+
+    <Button
+        android:id="@+id/btn_ok_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消注册广播"/>
+</LinearLayout>
