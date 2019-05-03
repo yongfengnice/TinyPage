@@ -206,6 +206,7 @@ class PageDelegate {
             //restore prePage activity
             View prePageView = prePage.getContentView();
             PageManager.instance().init((Activity) prePageView.getContext(), (ViewGroup) prePageView.getParent());
+            System.gc();
             return;
         }
 

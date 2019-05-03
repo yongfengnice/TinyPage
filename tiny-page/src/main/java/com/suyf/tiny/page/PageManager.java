@@ -40,6 +40,7 @@ public class PageManager {
     void destroy() {
         unRegisterAllClass();
         mPageContext = null;
+        System.gc();
     }
 
     public void startPageForResult(PageIntent pageIntent) {
