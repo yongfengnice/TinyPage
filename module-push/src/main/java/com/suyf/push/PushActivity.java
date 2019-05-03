@@ -17,6 +17,7 @@ public class PushActivity extends Activity {
         super.onCreate(savedInstanceState);
         WebView webView = new WebView(this);
         setContentView(webView);
+        webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {

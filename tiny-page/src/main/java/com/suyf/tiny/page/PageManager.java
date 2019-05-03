@@ -37,6 +37,11 @@ public class PageManager {
         return mPageContext;
     }
 
+    void destroy() {
+        unRegisterAllClass();
+        mPageContext = null;
+    }
+
     public void startPageForResult(PageIntent pageIntent) {
         TinyPage topPage = mPageContext.getPageStack().getTopPage();
         if (topPage != null) {
@@ -106,6 +111,13 @@ public class PageManager {
     public void unRegisterClass(String classKey) {
         if (mClassMap != null) {
             mClassMap.delete(classKey.hashCode());
+        }
+    }
+
+    public void unRegisterAllClass() {
+        if (mClassMap != null) {
+            mClassMap.clear();
+            mClassMap = null;
         }
     }
 

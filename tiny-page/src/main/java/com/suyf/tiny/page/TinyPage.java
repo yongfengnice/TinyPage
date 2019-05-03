@@ -44,7 +44,6 @@ public class TinyPage implements IPageLifeCycle, IPageEvent, IPageBroadcast {
 
     public void startPage(PageIntent pageIntent) {
         Check.notNull(pageIntent);
-
         mPageDelegate.startPage(this, pageIntent);
     }
 
@@ -80,11 +79,16 @@ public class TinyPage implements IPageLifeCycle, IPageEvent, IPageBroadcast {
 
     @Override
     public void onDestroy() {
+        mPageDelegate.onDestroy(this);
         if (mPageReceiver != null) {
             mPageReceiver.removeAllAction();
             mPageReceiver = null;
         }
-        mPageDelegate.onDestroy(this);
+        mContentView = null;
+        mPageIntent = null;
+        mPageDelegate = null;
+        mPageContext = null;
+//        System.gc();  //alternate to add gc tip
     }
 
     @Override

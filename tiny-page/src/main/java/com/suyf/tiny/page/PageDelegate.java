@@ -162,6 +162,8 @@ class PageDelegate {
         if (mPageContext.getPageStack().isEmpty()) {
             //empty,exit activity,exit app
             mPageContext.getActivity().finish();
+            PageManager.instance().destroy();
+            mPageContext = null;
         }
     }
 
@@ -196,13 +198,14 @@ class PageDelegate {
         prePage.onResume();
 
         if (page.getContentView().getContext() != prePage.getContentView().getContext()) {
-            //activity has changed
+            //activity has changed,finish current page activity,restore pre page activity
+            Activity activity = page.getActivity();
             page.onStop();
             page.onDestroy();
-            page.getActivity().finish();
+            activity.finish();
             //restore prePage activity
-            View view = prePage.getContentView();
-            PageManager.instance().init((Activity) view.getContext(), (ViewGroup) view.getParent());
+            View prePageView = prePage.getContentView();
+            PageManager.instance().init((Activity) prePageView.getContext(), (ViewGroup) prePageView.getParent());
             return;
         }
 
